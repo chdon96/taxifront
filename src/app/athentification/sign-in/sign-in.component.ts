@@ -18,7 +18,7 @@ export class SignInComponent implements OnInit {
 
   login() {
     const data = {
-      email: this.username,
+      username: this.username,
       password: this.password
     };
     this.userService.login(data).subscribe(

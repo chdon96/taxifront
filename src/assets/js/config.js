@@ -10,3 +10,13 @@
 
 }));
 //# sourceMappingURL=config.js.map
+const initialConfig = {
+  phoenixIsNavbarVerticalCollapsed: false,
+  phoenixTheme: 'light',
+  phoenixNavbarTopStyle: 'default',
+  phoenixNavbarVerticalStyle: 'default',
+  phoenixNavbarPosition: 'vertical',
+  phoenixNavbarTopShape: 'default',
+  phoenixIsRTL: false,
+  phoenixSupportChat: true
+};

@@ -26,6 +26,7 @@ export class UserService {
   getAll(): Observable<user[]> {
     return this.http.get<user[]>("http://localhost:8085/api/v1/Auth/AllUsers");
   }
+
   public AddUser(user: user){
     return this.http.post("http://localhost:8085/user/register",user,{responseType:'text' as 'json'});
 
@@ -33,7 +34,7 @@ export class UserService {
 
 
   SignUp(data: any): Observable<any> {
-    return this.http.post(this.url + "/register", data)
+    return this.http.post(this.url + "/user/register", data)
   }
 
   login(data: any): Observable<any> {
@@ -48,7 +49,9 @@ export class UserService {
     );
 
   }
-
+//  confirm(token: any): Observable<Object> {
+//    return this.http.put(`http://localhost:808/api/v1/Auth/confirm?token=${token}`, this.httpOptions);
+//  }
 
  // enable(idProjet: any): Observable<Object> {
  //   return this.http.put(`http://localhost:808/api/v1/Auth/Enable/${idProjet}`, this.httpOptions);
@@ -57,9 +60,6 @@ export class UserService {
  //   return this.http.put(`http://localhost:8088/api/v1/Auth/Disable/${idProjet}`, this.httpOptions);
  // }
 
- // confirm(token: any): Observable<Object> {
- //   return this.http.put(`http://localhost:808/api/v1/Auth/confirm?token=${token}`, this.httpOptions);
- // }
 
 //  SendReset(email: any): Observable<Object> {
 //    return this.http.put(`http://localhost:8088/api/v1/Auth/ResetPass/InsetYourEmailHere/?email=${email}`, this.httpOptions);
@@ -76,9 +76,9 @@ export class UserService {
     console.log(localStorage.getItem('jwtToken'));
 
   }
-  // logout(): void {
-  //   localStorage.removeItem('token');
-  // }
+   logout(): void {
+     localStorage.removeItem('token');
+   }
 
   // isLoggedIn(): boolean {
   //   const token = localStorage.getItem('token');

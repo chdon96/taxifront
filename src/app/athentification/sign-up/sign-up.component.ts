@@ -10,6 +10,12 @@ import { user } from 'src/app/core/model/user';
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
+  error: any;
+  firstName!: string;
+  lastName!: string;
+  email!: string;
+  username!: string;
+  password!: string;
 
 
   constructor(private userService: UserService, private currentRoute: ActivatedRoute, private route: Router,private location: Location) { }
@@ -38,6 +44,7 @@ export class SignUpComponent implements OnInit {
       this.message = data;
       this.location.replaceState('/Confirmation');
       location.reload();
+      this.route.navigate(['/home']);
     });
   }
 
