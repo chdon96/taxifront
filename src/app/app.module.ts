@@ -13,11 +13,17 @@ import { SignUpComponent } from './athentification/sign-up/sign-up.component';
 import { SignOutComponent } from './athentification/sign-out/sign-out.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
-
-import { ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
+//import { ActivatedRoute } from '@angular/router';
+//import { Location } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { LandingComponent } from './landing/landing.component';
+import { CompanyComponent } from './Companies/company/company.component';
+
+import { CompanyDetailsComponent } from './Companies/company-details/company-details.component';
+import { AddCompanyComponent } from './Companies/add-company/add-company.component';
+
+import { TaxiComponent } from './taxis/taxi/taxi.component';
+import { AddtaxiComponent } from './taxis/addtaxi/addtaxi.component';
 
 
 
@@ -33,7 +39,12 @@ import { LandingComponent } from './landing/landing.component';
     SignOutComponent,
     DashboardComponent,
     HomeComponent,
-    LandingComponent
+    LandingComponent,
+    CompanyComponent,
+    TaxiComponent,
+    CompanyDetailsComponent,
+    AddCompanyComponent,
+    AddtaxiComponent,
   ],
   imports: [
     BrowserModule,

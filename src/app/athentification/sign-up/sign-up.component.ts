@@ -42,7 +42,7 @@ export class SignUpComponent implements OnInit {
     let resp=this.userService.AddUser(this.User);
     resp.subscribe((data) => {
       this.message = data;
-      this.location.replaceState('/Confirmation');
+      this.location.replaceState('/home');
       location.reload();
       this.route.navigate(['/home']);
     });
