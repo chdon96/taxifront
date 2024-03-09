@@ -11,7 +11,8 @@ import { CompanyDetailsComponent } from './Companies/company-details/company-det
 import { AddCompanyComponent } from './Companies/add-company/add-company.component';
 import { AddtaxiComponent } from './taxis/addtaxi/addtaxi.component';
 const routes: Routes = [
- // { path: '', redirectTo: '/signin', pathMatch: 'full' },
+
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: "signin", component: SignInComponent },
   { path: "landing", component: LandingComponent },
 

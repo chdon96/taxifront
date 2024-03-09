@@ -1,16 +1,11 @@
-export class Taxi {
-    constructor(
-      public  idTaxi : number,
-      public  fullName : string,
-      public  email : string,
-      public  phoneNumber : number,
-      public  homeAdress : string ,
-      public  Numberplate:string ,
-      public  matricule :number,
-      public  createdAt: Date,
-      public  updatedAt: Date,
-      public  status : boolean
-
-    ) {}
-
-  }
+export type Taxi = {
+  idTaxi: number;
+  fullName: string;
+  email: string;
+  phoneNumber: string;
+  homeAdress: string;
+  Numberplate: string;
+  matricule: number;
+  carModel: string;
+  status: boolean;
+};

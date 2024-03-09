@@ -51,6 +51,7 @@ import { AddtaxiComponent } from './taxis/addtaxi/addtaxi.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
