@@ -1,13 +1,14 @@
-export class Company {
-    constructor(
-      public idCompany: number,
-      public  companyName:String,
-      public  mainAdress:string,
-      public   phoneNumber:number,
-      public  email:string,
-      public  createdAt: Date,
-      public  updatedAt:Date,
-      public  status:boolean
-    ) {}
+export type Company = {
+
+      // idCompany: number,
+        companyName:String,
+        responsable:String,
+        mainAdress:string,
+        phoneNumber:number,
+        email:string,
+        createdAt: Date,
+        updatedAt:Date,
+        status:boolean
+
 
   }

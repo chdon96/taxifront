@@ -1,32 +1,29 @@
 <app-header></app-header>
   <div class="content">
-  <form>
+  <form  (ngSubmit)="submitForm()">
   <div class="mb-3">
     <label class="form-label" for="basic-form-name">Company Name</label>
-    <input class="form-control" id="basic-form-name" type="text" placeholder="Company Name" />
+    <input class="form-control" id="basic-form-name" type="text" [(ngModel)]="company.companyName" name="company" placeholder="Company Name" />
   </div>
   <div class="mb-3">
     <label class="form-label" for="basic-form-email">mainAdress</label>
-    <input class="form-control" id="basic-form-email" type="text" placeholder="mainAdress" />
+    <input class="form-control" id="basic-form-email" type="text" [(ngModel)]="company.mainAdress" name="mainAdress" placeholder="mainAdress" />
   </div>
   <div class="mb-3">
     <label class="form-label" for="basic-form-password">phoneNumber</label>
-    <input class="form-control" id="basic-form-password" type="text" placeholder="phoneNumber" />
+    <input class="form-control" id="basic-form-password" type="text" [(ngModel)]="company.phoneNumber" name="phone" placeholder="phoneNumber" />
   </div>
   <div class="mb-3">
     <label class="form-label" for="basic-form-email">email</label>
-    <input class="form-control" id="basic-form-email" type="email" placeholder="example@example.com" />
+    <input class="form-control" id="basic-form-email" type="email" [(ngModel)]="company.email" name="email" placeholder="example@example.com" />
   </div>
   <div class="mb-3">
     <label class="form-label" for="basic-form-dob">representant</label>
-    <input class="form-control" id="basic-form-dob" type="text" />
+    <input class="form-control" id="basic-form-dob"[(ngModel)]="company.responsable" name="responsable" type="text" />
   </div>
 
 
-  <div class="mb-3">
-    <label class="form-label" for="basic-form-textarea">Description</label>
-    <textarea class="form-control" id="basic-form-textarea" rows="3" placeholder="Description"></textarea>
-  </div>
+
 
   <button class="btn btn-primary" type="submit">Submit</button>
 </form>
